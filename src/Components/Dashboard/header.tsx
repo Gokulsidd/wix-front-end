@@ -4,7 +4,7 @@ import Sheet from "@mui/joy/Sheet";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { Box } from "@mui/joy";
 // import AuthApi from "../../Service/Api/Auth.service";
-import { ColorSchemeToggle, getAuthData } from "../../utility";
+import { ColorSchemeToggle } from "../../utility";
 import React from "react";
 // import { toast } from "sonner";
 // import Dropdown from "@mui/joy/Dropdown";
