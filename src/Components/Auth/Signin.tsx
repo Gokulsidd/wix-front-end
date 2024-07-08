@@ -15,7 +15,6 @@ import AuthApi from "../../Service/Api/Auth.service";
 import { toast } from "sonner";
 import { setLocalStorageItem } from "../../Service/Localstorage";
 import { ColorSchemeToggle } from "../../utility";
-import FrontIcon from "./FrontIcon";
 import { Link } from "@mui/joy";
 
 interface FormElements extends HTMLFormControlsCollection {

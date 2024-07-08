@@ -1,8 +1,8 @@
 import { toast } from "sonner";
 import ApiGateway from "../../Service/Api/ApiGateway";
-import { Box, Button, Typography } from "@mui/joy";
+import { Box, Button } from "@mui/joy";
 import { useEffect, useState } from "react";
-import Table, { TableProps } from "@mui/joy/Table";
+import Table from "@mui/joy/Table";
 import moment from "moment";
 import { LoadingSpinner } from "../../utility";
 

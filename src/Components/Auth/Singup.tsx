@@ -15,7 +15,6 @@ import {  Link } from "@mui/joy";
 import AuthApi from "../../Service/Api/Auth.service";
 import { toast } from "sonner";
 import { ColorSchemeToggle } from "../../utility";
-import FrontIcon from "./FrontIcon";
 
 interface FormElements extends HTMLFormControlsCollection {
   confirm_password: HTMLInputElement;

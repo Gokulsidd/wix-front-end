@@ -2,17 +2,16 @@ import GlobalStyles from "@mui/joy/GlobalStyles";
 import IconButton from "@mui/joy/IconButton";
 import Sheet from "@mui/joy/Sheet";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import { Avatar, Box, Menu, MenuButton, MenuItem, Typography } from "@mui/joy";
-import AuthApi from "../../Service/Api/Auth.service";
+import { Box } from "@mui/joy";
+// import AuthApi from "../../Service/Api/Auth.service";
 import { ColorSchemeToggle, getAuthData } from "../../utility";
-import { clearAll } from "../../Service/Localstorage";
 import React from "react";
-import { toast } from "sonner";
-import Dropdown from "@mui/joy/Dropdown";
-import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
-import ListDivider from "@mui/joy/ListDivider";
-import PersonSharpIcon from "@mui/icons-material/PersonSharp";
-import { useNavigate } from "react-router-dom";
+// import { toast } from "sonner";
+// import Dropdown from "@mui/joy/Dropdown";
+// import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
+// import ListDivider from "@mui/joy/ListDivider";
+// import PersonSharpIcon from "@mui/icons-material/PersonSharp";
+// import { useNavigate } from "react-router-dom";
 
 function openSidebar() {
   if (typeof window !== "undefined") {
@@ -42,22 +41,22 @@ function toggleSidebar() {
 }
 
 export default function Header() {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
   const id = getAuthData();
-  const [profile, setProfile] = React.useState<any>(null);
+  // const [profile, setProfile] = React.useState<any>(null);
 
-  const getImage = async () => {
-    await AuthApi.getheaderdetails(id.id)
-      .then((res: any) => {
-        setProfile(res.data);
-      })
-      .catch((err: any) => {
-        toast.error(err.response.data.message);
-      });
-  };
+  // const getImage = async () => {
+  //   await AuthApi.getheaderdetails(id.id)
+  //     .then((res: any) => {
+  //       setProfile(res.data);
+  //     })
+  //     .catch((err: any) => {
+  //       toast.error(err.response.data.message);
+  //     });
+  // };
 
   React.useEffect(() => {
-    getImage();
+    // getImage();
   }, []);
   return (
     <Sheet
