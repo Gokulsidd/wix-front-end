@@ -42,7 +42,7 @@ function toggleSidebar() {
 
 export default function Header() {
   // let navigate = useNavigate();
-  const id = getAuthData();
+  // const id = getAuthData();
   // const [profile, setProfile] = React.useState<any>(null);
 
   // const getImage = async () => {
